@@ -6,24 +6,20 @@ public class calculadoraJava {
 
         Scanner scanner = new Scanner(System.in);
 
-        // Exibe as opções de operação
         System.out.println("Selecione a operação desejada:");
         System.out.println("1 - Soma");
         System.out.println("2 - Subtração");
         System.out.println("3 - Multiplicação");
         System.out.println("4 - Divisão");
 
-        // Lê a opção escolhida pelo usuário
         int opcao = scanner.nextInt();
 
-        // Lê os valores a serem operados
         System.out.println("Digite o primeiro valor:");
         float numero1 = scanner.nextFloat();
 
         System.out.println("Digite o segundo valor:");
         float numero2 = scanner.nextFloat();
 
-        // Realiza a operação de acordo com a opção escolhida
         float resultado = 0;
         switch (opcao) {
             case 1:
@@ -43,7 +39,6 @@ public class calculadoraJava {
                 break;
         }
 
-        // Exibe o resultado da operação
         if (opcao >= 1 && opcao <= 4) {
             System.out.println("O resultado da operação é: " + resultado);
         }
